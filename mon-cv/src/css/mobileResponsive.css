@@ -18,11 +18,16 @@
         margin-right: 30px;
         height: 35%;
         align-items: center;
-    }   
+    }
+   
 }
-@media  (max-width: 778px){
+@media  (max-width: 820px){
     header{
         background-image: url('../pictures/pexels-kate-trifo-4057059.jpg');
+    }
+    .displayFiltre{
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 100%;
     }
     .navBar{
         background-color:rgba(0, 0, 0, 0);
@@ -36,5 +41,70 @@
     }
     .menu{
         display: block;     
+    }
+    
+    @keyframes letAppear {
+        0% { color:rgb(255, 184, 184,0);background: rgba(0, 0, 0, 0);  }
+        20%{ color:rgb(255, 184, 184,0.2);background: rgba(0, 0, 0, 0.15);  }
+        40%{ color:rgb(255, 184, 184,0.4);background: rgba(0, 0, 0, 0.30);  }
+        60%{ color:rgb(255, 184, 184,0.6);background: rgba(0, 0, 0, 0.45);  }
+        80%{ color:rgb(255, 184, 184,0.8);background: rgba(0, 0, 0, 0.60);  }
+        100%{ color:rgb(255, 184, 184,1);background: rgba(0, 0, 0, 0.75);  }
+    }
+        
+    @keyframes letAppearline {
+        0%{background-color: rgb(255, 255, 255,0)}
+        20%{background-color: rgb(255, 255, 255,0.15)}
+        40%{background-color: rgb(255, 255, 255,0.30)}
+        60%{background-color: rgb(255, 255, 255,0.45)}
+        80%{background-color: rgb(255, 255, 255,0.6)}
+        100%{background-color: rgb(255, 255, 255,0.75)}
+    }
+    .responsivenavList2{
+        position:fixed;
+        z-index: index 1;
+        height: 100%;
+        top:0%;
+        background: rgba(0, 0, 0, 0);
+        width: 100%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        color:rgb(255, 184, 184,0); 
+        animation-name: letAppear;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards; 
+    }
+    .line{
+        width: 85%;
+        height: 1px;
+        background-color: rgb(255, 255, 255,0);
+    }
+    .line2{
+        width: 85%;
+        height: 1px;
+        background-color: rgb(255, 255, 255,0);
+        animation-name: letAppearline;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards; 
+    }
+    .responLi{
+        margin-top: 30px;   
+    }
+    .cross2{
+        width: 48px;
+        height: 48px;
+        margin-right: 20px
+
+    }
+    .containerMenu{
+        display: block;
+    }
+    .containerMenu2{
+        display: none;
     }
 }
