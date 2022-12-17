@@ -9,7 +9,7 @@ header{
 }
 .navBar{
     display: flex;
-    align-items: center;
+    align-items:center;
     color: #FFB8B8;
     background: rgba(0, 0, 0, 0.3);
     width: 100%;
@@ -17,7 +17,8 @@ header{
     top:0%;
     margin-bottom: 0px;
     padding-left: 10px;
-    z-index: 2;
+    z-index: 5;
+    justify-content: center;
 }
 .test{
     display: flex;
@@ -34,15 +35,13 @@ header{
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 60%;
 }
 .menu{
     margin-right: 20px;
     display:none
 }
-.menu2{
-    display:none;
-}
+
 
 .devP{
     display: flex;
@@ -86,9 +85,7 @@ header{
     color: white;
     align-items: center;
 }
-main{
-    height: 100%;
-}
+
 .responsivenavList{
     position:fixed;
     z-index: index 1;
@@ -109,5 +106,244 @@ main{
 .cross{
     display:none
 }
+/*main*/
+main{
+    height:fit-content
+}
+/****************************************************section à propos************************************************************************/
+.Apropos{
+    display: flex;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+.avatar{
+    margin-right: 20px;
+    width: 80%;
+    margin-top: 22px;
+}
+.text-wrapper{
+    font-size: large;
+    width: 60%;
 
+}
+.avatardCard{
+    display: flex;
+    flex-direction:column;
+    width: 40%;
+}
+.containParaAva2{
+    display: flex;
+    flex-direction: row;
+}
+.paraAvaBold{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.paraAva{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+/***********************************compétences********************************************/
+.compétences{
+    background-color: 	#DCDCDC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    
+}
+.pComp{
+    font-weight: bold;
+    font-size: 40px;
+    color:white
+}
+.containerCompFront{
+    display: flex;
+    flex-direction: row;
+    width:fit-content;
+    margin-top: 30px;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    transform: translate(-3000px,0px);
+}
+.containerCompFront2{
+    display: flex;
+    flex-direction: row;
+    width:fit-content;
+    margin-top: 30px;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    transform: translate(-3000px,0px);
+    animation-name: appearLeft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes appearLeft {
+    from{
+        transform: translate(-3000px,0px);
+    }
+    to{
+        transform:translate(0px,0px)
+    }
+}
+@keyframes appearRight {
+    from{
+        transform: translate(-3000px,0px);
+    }
+    to{
+        transform:translate(0px,0px)
+    }
+}
+.containerCompBack{
+    display: flex;
+    flex-direction: row;
+    width:fit-content;
+    margin-top: 30px;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    transform: translate(-3000px,0px);
+    
+}
+.containerCompBack2{
+    display: flex;
+    flex-direction: row;
+    width:fit-content;
+    margin-top: 30px;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    transform: translate(-3000px,0px);
+    animation-name: appearRight;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
 
+.containerCompDesign{
+    display: flex;
+    flex-direction: row;
+    width:fit-content;
+    margin-top: 30px;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.containerCompEnv{
+    display: flex;
+    flex-direction: row;
+    width:fit-content;
+    margin-top: 30px;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.cardComp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60% ;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 10px 5px 10px #696969;
+    background-color: white;
+    height: 300px;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 892px;
+    min-width: 740px;
+    padding-top: 15px
+}
+
+/******************************inside the competence card front **********************************************/
+.pFront{
+    font-weight: bold;
+    font-size: 25px;
+    color:#974063;
+    margin-bottom: 20px;
+    
+}
+.PDescrFront{
+    font-size: 20px;
+    width: 100%;
+}
+.containeCardCompP{
+    font-weight: bold;
+}
+.containerCardCompFront{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+    
+}
+.containerCardAllCompPAndStar{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.containerCardCompPandStar{
+    display: flex;
+    flex-direction: row;
+
+}
+.containerCardStars{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+}
+.containeCardCompP{
+    width: 25%;
+}
+/******************************inside the competence card Back **********************************************/
+.containerCardCompBack{
+    display: flex;
+    flex-direction: row;
+}
+.pBack{
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color:#F54768
+}
+.PDescrBack{
+    font-size: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+/***************************inside the competence card design***********************************************/
+.containerCardCompDesign{
+    display: flex;
+    flex-direction: row;
+}
+.pDesign{
+    font-size: 25px;
+    font-weight: bold;
+    color:#FF9677;
+    margin-bottom: 35px;
+}
+/*****************************inside environment card*********************************************************/
+.containerIconP{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.h1Env{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 50px;
+    color:#41436A
+}
+.pEnv{
+    margin-left: 10px;
+    width: 60%;
+}
+.titleEnv{
+    font-weight: bold;
+    margin-left: 5px;
+}

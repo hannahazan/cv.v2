@@ -18,6 +18,7 @@
   "homepage": "https://github.com/hannahazan/cv.v2#readme",
   "type": "module",
   "dependencies": {
+    "react-lorem-ipsum": "^1.4.10",
     "react-router-dom": "^6.4.4"
   }
 }
