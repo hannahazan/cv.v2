@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -17,13 +15,14 @@
   "bugs": {
     "url": "https://github.com/hannahazan/cv.v2/issues"
   },
-  "homepage": "https://github.com/hannahazan/cv.v2#readme",
+  "homepage": "https://hannahazan.github.io/cv.v2",
   "type": "module",
   "dependencies": {
     "react-lorem-ipsum": "^1.4.10",
     "react-router-dom": "^6.4.4"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "install": "^0.13.0",
     "npm": "^9.2.0"
   }
